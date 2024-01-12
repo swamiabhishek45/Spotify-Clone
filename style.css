@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /* background-color: black; */
+    /* color: white; */
+}
+
+.left{
+    width: 25vw;
+    /* padding: 10px; */
+}
+
+.right{
+    width: 75vw;
+    /* padding: 10px; */
+    /* height: 100vh; */
+}
+
+.home {
+
+    /* padding: 10px; */
+    
+
+}
+
+/* .home ul {
+    height: 48px;
+    padding: 4px 12px;
+    width: 336px;
+    
+} */
+
+.home ul li{
+    /* margin: 12px 0; */
+    display: flex;
+    width: 20px;
+    list-style: none;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.box1{
+
+    background-color: #242424;
+    padding: 23px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.library{
+    min-height: 80vh;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+
+    /* padding: 23px 14px; */
+}
+
+.heading img{
+    width: 20px;
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.left-right{
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.spotifyPlaylist{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.cardContainer{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.card{
+    /* border: 2px solid red; */
+    background-color: #151515;
+    width: 203px;
+    /* height: 283.8px; */
+    border-radius: 10px;
+    
+}
+
+.card > *{
+    padding: 10px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+.play-svg{
+    width: 45px;
+    background-color: #1ed760;
+    border-radius: 50%;
+    position: absolute;
+    /* right: ; */
+    top: 250px;
+    left: 520px;
+    /* opacity: 0; */
+}
