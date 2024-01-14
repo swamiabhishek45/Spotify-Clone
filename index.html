@@ -14,7 +14,7 @@
         <div class="close">
           <img class="invert" src="img/close.svg" alt="">
         </div>
-        <div class="home bg-grey rounded m-1 p-1">
+        <div class="home bg-grey rounded p-1">
           <img width="110" class="invert" src="img/icon.svg" alt="" />
           <ul>
             <li><img class="invert" src="img/home.svg" alt="home" />Home</li>
@@ -24,7 +24,7 @@
           </ul>
         </div>
 
-        <div class="library bg-grey rounded m-1 p-1">
+        <div class="library bg-grey rounded p-1">
           <div class="heading">
             <img class="invert" src="img/playlist.svg" alt="" />
             <h2>Your Library</h2>
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div class="right rounded bg-grey m-1">
+      <div class="right bg-grey">
         <div class="header">
           <div class="nav">
             <div class="flex" style="gap: 10px;">
@@ -110,9 +110,11 @@
         <div class="spotifyPlaylist">
           <h1>Spotify playlist</h1>
           <div class="cardContainer">
-            <div class="card">
-              <svg
-                class="play-svg"
+
+
+            <div data-folder="arj" class="card">
+              <div  class="play">
+             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 data-encore-id="icon"
                 role="img"
@@ -124,6 +126,8 @@
                   d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
                 ></path>
               </svg>
+
+               </div>
               <img
                 src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d"
                 height="171px"
@@ -132,9 +136,10 @@
               <p>Hits to boost your mood and fill you with happiness!</p>
             </div>
 
-            <div class="card">
-              <svg
-                class="play-svg"
+
+            <div data-folder="Atif" class="card">
+              <div  class="play">
+             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 data-encore-id="icon"
                 role="img"
@@ -146,6 +151,8 @@
                   d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
                 ></path>
               </svg>
+
+               </div>
               <img
                 src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d"
                 height="171px"
@@ -153,28 +160,10 @@
               <h2>Happy Hits</h2>
               <p>Hits to boost your mood and fill you with happiness!</p>
             </div>
-            <div class="card">
-              <svg
-                class="play-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                data-encore-id="icon"
-                role="img"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                class="Svg-sc-ytk21e-0 iYxpxA"
-              >
-                <path
-                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
-                ></path>
-              </svg>
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d"
-                height="171px"
-              />
-              <h2>Happy Hits</h2>
-              <p>Hits to boost your mood and fill you with happiness!</p>
-            </div>
-          </div>
+
+            
+
+            
           <div class="playbar">
             <div class="seekbar">
               <div class="circle"></div>
@@ -183,29 +172,40 @@
               <div class="songinfo"></div>
               <div class="songbtns">
                 <img
+                width="30px"
                   id="previous"
-                  style="height: 15px"
+                  style="height: 20px"
                   class="invert"
                   src="img/prevsong.svg"
                   alt=""
                 />
                 <img
+                width="30px"
                   id="play"
-                  style="height: 15px"
+                  style="height: 20px"
                   class="invert"
                   src="img/play.svg"
                   alt=""
                 />
                 <!-- <button class="playbg"></button> -->
                 <img
+                width="30px"
                   id="next"
-                  style="height: 15px"
+                  style="height: 20px"
                   class="invert"
                   src="img/nextsong.svg"
                   alt=""
                 />
               </div>
-              <div class="songtime"></div>
+              <div class="timevol">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img class="invert" src="img/volume.svg" alt="">
+                  <div class="range">
+                    <input type="range" name="volume" id="">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
