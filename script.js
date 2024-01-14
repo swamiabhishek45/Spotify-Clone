@@ -63,25 +63,22 @@ async function getSongs(folder) {
     document.querySelector(".songlist").getElementsByTagName("li")
   ).forEach((e) => {
     e.addEventListener("click", (element) => {
-     
-     
       playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
-      
-      
+
       // let playnow = document.getElementById("playnow");
-          // playnow.src = "img/pause.svg";
+      // playnow.src = "img/pause.svg";
       // if(currentSong.paused){
 
-        // add event listener to playnow
-        // playnow.addEventListener("click", () => {
-        //   console.log("img/play2.svg");
-        //   if (currentSong.paused) {
-        //     currentSong.play();
-        //   } else {
-        //     currentSong.pause();
-        //     playnow.src = "img/play2.svg";
-        //   }
-        // });
+      // add event listener to playnow
+      // playnow.addEventListener("click", () => {
+      //   console.log("img/play2.svg");
+      //   if (currentSong.paused) {
+      //     currentSong.play();
+      //   } else {
+      //     currentSong.pause();
+      //     playnow.src = "img/play2.svg";
+      //   }
+      // });
       // }
     });
   });
@@ -107,11 +104,11 @@ async function displayAlbums() {
   div.innerHTML = response;
   let anchors = div.getElementsByTagName("a");
   let cardContainer = document.querySelector(".cardContainer");
-  let array = Array.from(anchors)
+  let array = Array.from(anchors);
 
-    for (let index = 0; index < array.length; index++) {
-      const e = array[index];
-      
+  for (let index = 0; index < array.length; index++) {
+    const e = array[index];
+
     if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
       // console.log(e.href.split("/").slice(-1)[0]);
       let folder = e.href.split("/").slice(-1)[0];
@@ -238,7 +235,6 @@ async function main() {
     }
   });
 
-  
   // // add event listener to playnow
   // let playnow = document.getElementById("playnow");
   // playnow.addEventListener("click", () => {
