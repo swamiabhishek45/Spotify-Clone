@@ -14,7 +14,12 @@
 .left {
   width: 28vw;
   
-  /* padding: 10px; */
+  /* padding: 5px; */
+}
+
+body{
+  background-color: black;
+  color: white;
 }
 
 .right {
@@ -22,9 +27,9 @@
   /* padding: 10px; */
   /* height: 100vh; */
   position: relative;
-  height: 98.5vh;
+  /* height: 98.5vh; */
   margin: 7px 5px;
-   border-radius: 7px;
+   /* border-radius: 7px; */
 }
 
 .home {
@@ -41,8 +46,11 @@
 }
 
 .library {
-  height: 83vh;
+  height: 80vh;
   margin: 7px 5px;
+
+  position: relative;
+  min-height: 80vh;
 }
 .songlist {
   height: 509px;
@@ -60,8 +68,9 @@
   gap: 20px;
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid rgba(146, 143, 143, 0.491);
   margin: 10px 0;
+  padding: 13px;
   border-radius: 5px;
 }
 
@@ -77,10 +86,8 @@
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  /* width: 130px; */
-  /* position: relative;
-  left: 30px; */
 }
+
 
 .box1 {
   background-color: #242424;
@@ -98,11 +105,12 @@
   align-items: center;
   font-size: 13px;
 
-  /* padding: 23px 14px; */
+
+  /* padding: 20px 10px; */
 }
 
 .heading img {
-  width: 20px;
+  width: 25px;
 }
 
 .header > * {
@@ -162,17 +170,18 @@
 }
 
 .cardContainer {
-  margin-top: 15px;
+  margin: 30px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  max-height: 70vh;
+  max-height: 60vh;
   overflow-y: auto;
   /* justify-content: center; */
 }
 
 .card {
   background-color: #151515;
+  padding: 10px;
   width: 203px;
   border-radius: 5px;
   position: relative;
@@ -190,7 +199,7 @@
 .card img {
   width: 100%;
   object-fit: contain;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .play{
@@ -209,26 +218,28 @@
   transition: all .9s;
 }
 
-/* .play-svg {
-  width: 45px;
-  background-color: #1ed760;
-  border-radius: 50%;
-  position: absolute;
-  top: 110px;
-  left: 120px;
-  opacity: var(--a);
-  transition: all .9s;
-} */
-
 .playbar {
+  /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+   
+    background: #484747;
+    border-radius: 10px;
+    width: 90%;
+    padding: 12px;
+    width: 70vw;
+    min-height: 40px; */
+
   position: absolute;
   right: 10px;
   bottom: 10px;
   background-color: rgb(29, 29, 29);
-  width: 98%;
+  width: 70vw;
   padding: 12px;
-  border-radius: 25px;
-  min-height: 60px;
+  border-radius: 10px;
+  min-height: 40px;
 }
 
 .songbtns {
@@ -265,17 +276,6 @@
   transition: left 0.5s;
 }
 
-/* .playbg{
-  background-color: white;
-  border-radius: 25px;
-  height: 32px;
-  width: 32px;
-  
-
-
-  
-} */
-
 .songbar {
   display: flex;
   justify-content: space-between;
@@ -305,7 +305,13 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
+
+.range input{
+  cursor: pointer;
+}
+
 
 .hamburger {
   display: none;
@@ -323,7 +329,9 @@
     width: 370px;
     background-color: black;
     margin: 0;
+    position: fixed;
     padding: 0;
+    /* height: 40vh; */
   }
 .home{
   margin: 0;
@@ -332,6 +340,7 @@
 .library{
   margin: 0;
   margin-top: 5px;
+  /* height: 50vh; */
 }
   .left-right{
     display: none;
@@ -357,22 +366,26 @@
   }
 
   .card{
-    width: 90vw;
-        display: flex;
+    /* width: vw; */
+    /* width: 90vw; */
+    display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
     align-items: center;
     
   }
 
   .cardContainer{
     margin: 0;
-    /* justify-content: center; */
+    max-height: 60vh;
+    justify-content: space;
     
   }
   
 
   .playbar {
     width: 95%;
+    /* width: calc(100vw - 75px);  */
     /* margin-right: 6px; */
     /* height: 100px; */
     
@@ -380,6 +393,7 @@
 
   .seekbar {
     width: 94%;
+    
     /* margin-left:60px; */
     margin-bottom: 38px;
     position: absolute;
@@ -416,5 +430,29 @@
     width: 40px;
     cursor: pointer;
     /* margin-left: 15px; */
+  }
+}
+
+@media (max-width: 500px) {
+  .card{
+    width: 90vw;
+    /* width: 90vw; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    
+  }
+
+  .cardContainer{
+    margin: 0;
+    max-height: 60vh;
+    justify-content: space;
+    
+  }
+
+  .play{
+    position: absolute;
+    right: 130px;
   }
 }
