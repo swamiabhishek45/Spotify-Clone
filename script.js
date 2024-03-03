@@ -1,4 +1,4 @@
-console.log("Console is working!!");
+// console.log("Console is working!!");
 let currentSong = new Audio();
 let songs;
 let currFolder;
@@ -142,6 +142,9 @@ async function displayAlbums() {
       // let pp = document.getElementById("pp");
       // pp.src = "img/pause.svg"
       playMusic(songs[0]);
+      if (document.querySelector(".left").style.left != "0%") {
+        document.querySelector(".left").style.left = "0%";
+      }
     });
   });
 }

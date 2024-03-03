@@ -67,7 +67,7 @@
 
 ::-webkit-scrollbar-track {
   background-color: #4f50522e; /* Dark background color for the track */
-  border-radius: 6px; 
+  /* border-radius: 6px;  */
 }
 
 /* For Firefox */

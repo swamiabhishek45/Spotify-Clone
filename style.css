@@ -317,7 +317,7 @@ body {
 
 @media (max-width: 1400px) {
   .left {
-    position: absolute;
+    position: fixed;
     left: -120%;
     transition: all 0.5s;
     z-index: 1;
@@ -326,7 +326,7 @@ body {
     margin: 0;
     position: fixed;
     padding: 0;
-    /* height: 40vh; */
+    /* height: 100vw; */
   }
   .home {
     margin: 0;
@@ -372,7 +372,7 @@ body {
   .cardContainer {
     margin: 0;
     max-height: 60vh;
-    justify-content: space;
+    /* justify-content: center; */
   }
 
   .playbar {
@@ -426,10 +426,10 @@ body {
 
 @media (max-width: 500px) {
   .card {
-    width: 90vw;
+    width: 100%;
     /* width: 90vw; */
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     /* flex-wrap: wrap; */
     align-items: center;
   }
@@ -443,5 +443,9 @@ body {
   .play {
     position: absolute;
     right: 130px;
+  }
+
+  .playbar{
+    bottom: 0;
   }
 }
