@@ -12,8 +12,8 @@
 }
 
 .left {
-  width: 28vw;
-
+  width: 25vw;
+margin-left:  10px;
   /* padding: 5px; */
 }
 
@@ -46,10 +46,10 @@ body {
 }
 
 .library {
-  height: 80vh;
+  /* height: 80vh;
+  position: relative; */
+  
   margin: 7px 5px;
-
-  position: relative;
   min-height: 80vh;
 }
 .songlist {
