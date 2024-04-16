@@ -126,7 +126,7 @@ async function displayAlbums() {
 
                </div>
               <img
-                src="/songs/${folder}/cover.jpeg"
+                src="/songs/${folder}/${response.name}.jpeg"
                 height="171px"
               />
               <h2>${response.title}</h2>
