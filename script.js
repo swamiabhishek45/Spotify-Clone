@@ -20,7 +20,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`https://spotify20-roan.vercel.app//${folder}/`);
+  let a = await fetch(`https://spotify20-roan.vercel.app/${folder}/`);
   let response = await a.text();
 
   let div = document.createElement("div");
@@ -98,7 +98,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-  let a = await fetch(`https://spotify20-roan.vercel.app//songs/`);
+  let a = await fetch(`https://spotify20-roan.vercel.app/songs/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
